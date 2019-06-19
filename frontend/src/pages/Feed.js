@@ -63,7 +63,7 @@ class Feed extends Component {
                 <img src={comment} alt="" />
                 <img src={send} alt="" />
               </div>
-              <strong>{post.likes} {post.likes == 0 ? 'curta esta publicação' : post.likes > 1 ? 'curtidas' : 'curtida'} </strong>
+              <strong>{post.likes} {post.likes === 0 ? 'curta esta publicação' : post.likes > 1 ? 'curtidas' : 'curtida'} </strong>
               <p>
                 {post.description}
                 <span>{post.hashtags}</span>
